@@ -7,10 +7,10 @@ spring:
             - id : r1
               uri: lb://CUSTOMER-SERVICE
               predicates:
-                - Path=/customers/**
+                - Path= /customers/**
 
             - id : r2
               uri: lb://INVENTORY-SERVICE
               predicates:
-                - Path=/products/**
+                - Path= /products/**
 

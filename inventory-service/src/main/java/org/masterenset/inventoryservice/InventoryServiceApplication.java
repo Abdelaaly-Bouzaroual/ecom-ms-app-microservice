@@ -1,6 +1,6 @@
 package org.masterenset.inventoryservice;
 
-import org.masterenset.inventoryservice.entities.Products;
+import org.masterenset.inventoryservice.entities.products;
 import org.masterenset.inventoryservice.repository.ProductsRespository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -17,13 +17,13 @@ public class InventoryServiceApplication {
     @Bean
     CommandLineRunner start(ProductsRespository productsRepository) {
         return args -> {
-            productsRepository.save(Products.builder().name("phone").price(100).quantity(12).build());
-            productsRepository.save(Products.builder().name("home").price(99).quantity(10).build());
-            productsRepository.save(Products.builder().name("Pizza").price(45).quantity(30).build());
-            productsRepository.save(Products.builder().name("headphone").price(9961).quantity(50).build());
-            productsRepository.save(Products.builder().name("screen").price(1433).quantity(58).build());
-            productsRepository.save(Products.builder().name("smart whatch").price(362).quantity(74).build());
-            productsRepository.save(Products.builder().name("laptop").price(225).quantity(63).build());
+            productsRepository.save(products.builder().name("phone").price(100).quantity(12).build());
+            productsRepository.save(products.builder().name("home").price(99).quantity(10).build());
+            productsRepository.save(products.builder().name("Pizza").price(45).quantity(30).build());
+            productsRepository.save(products.builder().name("headphone").price(9961).quantity(50).build());
+            productsRepository.save(products.builder().name("screen").price(1433).quantity(58).build());
+            productsRepository.save(products.builder().name("smart whatch").price(362).quantity(74).build());
+            productsRepository.save(products.builder().name("laptop").price(225).quantity(63).build());
         };
     }
 }

@@ -19,7 +19,7 @@ public class CustomerServiceApplication {
         return args -> {
             customerRepository.save(Customer.builder().name("mohammed ").email("med@gmail.com").build());
             customerRepository.save(Customer.builder().name("samir").email("samir@gmail.com").build());
-            customerRepository.save(Customer.builder().name("khalid").email("khalid@gmail.com").build());
+                customerRepository.save(Customer.builder().name("khalid").email("khalid@gmail.com").build());
             customerRepository.save(Customer.builder().name("farid").email("farid@gmail.com").build());
         };
     }
